@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>mcusurveyform</title>
+  </head>
+  <body>
+    <main class="whole-page">
+      <!--header-->
+      <header>
+        <h1 id="title"><strong>MCU</strong></h1>
+
+        <h2><strong>Marvel Cinematic Universe Survey</strong></h2>
+
+        <div class="p_container">
+          <p id="description">
+            With the commitment to bring quality stories to viewers, we are
+            conducting a survey of the general public to find out their opinion.
+          </p>
+          <p>
+            We value your feedback and would love to hear about your experience
+            with us.
+          </p>
+        </div>
+      </header>
+      <!--form-->
+      <form id="survey-form">
+        <!--Name-->
+        <div class="form-group">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="name" id="name-label">Name</label>
+        </div>
+
+        <!--Email-->
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+          <label for="email" id="email-label">Email</label>
+        </div>
+
+        <!--Age-->
+        <div class="form-group age">
+          <label for="number" id="number-label"
+            >Age <span class="clue">(opcional)</span></label
+          >
+
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <!--location-->
+        <div class="form-group">
+          <p>What is your location?</p>
+          <select name="location" id="mylocation" class="form-control" required>
+            <option disabled selected value>Select your location</option>
+
+            <option value="south-america">South America</option>
+
+            <option value="north-america">North America</option>
+
+            <option value="europe">Europe</option>
+
+            <option value="asia">Asia</option>
+
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
+
+        <!--dropdown Current rol-->
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select Current Role</option>
+
+            <option value="student">Student</option>
+
+            <option value="job">Full Time Job</option>
+
+            <option value="learner">Full Time Learner</option>
+
+            <option value="preferNo">Prefer not to say</option>
+
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!--ever seen an MCU movie-->
+        <div class="form-group">
+          <p>Have you ever seen an MCU movie?</p>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="movieview"
+              value="yes"
+              class="input-radio"
+              checked
+            />Yes
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="movieview"
+              value="no"
+              class="input-radio"
+            />No
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="movieview"
+              value="not-sure"
+              class="input-radio"
+              checked
+            />Not sure
+          </label>
+        </div>
+
+        <!--The following movies-->
+        <div class="form-group grid-checkbox">
+          <p>
+            Have you seen any of the following movies?
+            <span class="clue">(Check all that apply, or "none" at all)</span>
+          </p>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Captain America"
+              class="input-checkbox"
+            />Captain America
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Captain Marvel"
+              class="input-checkbox"
+            />Captain Marvel
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Iron Man"
+              class="input-checkbox"
+            />Iron Man
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="The incredible Hulk"
+              class="input-checkbox"
+            />The incredible Hulk
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Thor"
+              class="input-checkbox"
+            />Thor
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="The Avengers"
+              class="input-checkbox"
+            />The Avengers
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Guardians of the Galaxy"
+              class="input-checkbox"
+            />Guardians of the Galaxy
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Ant-Man"
+              class="input-checkbox"
+            />Ant-Man
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Spider-Man: Homecoming"
+              class="input-checkbox"
+            />Spider-Man: Homecoming
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Doctor Strange"
+              class="input-checkbox"
+            />Doctor Strange
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Black Widow"
+              class="input-checkbox"
+            />Black Widow
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Black Panther"
+              class="input-checkbox"
+            />Black Panther
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Shang-Chi"
+              class="input-checkbox"
+            />Shang-Chi
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="Eternals"
+              class="input-checkbox"
+            />Eternals
+          </label>
+
+          <label class="label-checkbox">
+            <input
+              type="checkbox"
+              name="movies-seen"
+              value="None"
+              class="input-checkbox"
+            />None
+          </label>
+        </div>
+
+        <!--movie that I like the most-->
+        <div class="form-group">
+          <p>
+            If you marked two or more options, which one do you like the most?
+          </p>
+
+          <select
+            name="best-worst-film"
+            id="the-best-movie"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>the best movie</option>
+          </select>
+        </div>
+
+        <!--Why did I like the movie?-->
+        <div class="form-group">
+          <p>Why?</p>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-preferred"
+              class="input-radio"
+              value="good-plot"
+            />Good plot
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-preferred"
+              class="input-radio"
+              value="good-special-effects"
+            />Good special effects
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-preferred"
+              class="input-radio"
+              value="good-performances"
+            />Good performances
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-preferred"
+              class="input-radio"
+              value="other"
+            />Other
+          </label>
+        </div>
+
+        <!--Movie I liked the least-->
+        <div class="form-group">
+          <p>And the one you liked the least?</p>
+
+          <select
+            name="best-worst-film"
+            id="the-worst-movie"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>the worst movie</option>
+          </select>
+        </div>
+
+        <!--Why didn't I like the movie?-->
+        <div class="form-group">
+          <p>Why?</p>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-not-preferred"
+              class="input-radio"
+              value="slow-plot"
+            />very slow plot
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-not-preferred"
+              class="input-radio"
+              value="fast-plot"
+            />Very fast plot
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-not-preferred"
+              class="input-radio"
+              value="bad-effects"
+            />Bad special effects
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-not-preferred"
+              class="input-radio"
+              value="bad-performances"
+            />Bad performances
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-not-preferred"
+              class="input-radio"
+              value="bad-plot"
+            />I didn't like the plot
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="why-not-preferred"
+              class="input-radio"
+              value="other"
+            />Other
+          </label>
+        </div>
+
+        <!--recommend movie-->
+        <div class="form-group">
+          <p>Would you recommend our movies to your friends?</p>
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              class="input-radio"
+              checked
+            />Definitely
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              value="maybe"
+              name="user-recommend"
+              class="input-radio"
+            />Maybe
+          </label>
+
+          <label class="label-radio">
+            <input
+              type="radio"
+              name="user-recommend"
+              value="not-sure"
+              class="input-radio"
+            />Not Sure
+          </label>
+        </div>
+
+        <!-- Text-area -->
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <!--Button submit-->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submitBtn">Submit</button>
+        </div>
+      </form>
+    </main>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
